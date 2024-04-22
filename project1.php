@@ -6,26 +6,25 @@
     <title>Project1</title>
 </head>
 <body>
-    <?php  
-    $paragraph = "PAragraph";
-    $number= "number";
-    echo"<h1>Emmanuel</h1>";
-    echo"<p>This is a $paragraph 1</p>";
-    echo"<p>This is a $paragraph 2</p>";
-    echo"<p>This is a $paragraph $number 3</p>";
-    echo"<p>This is a $paragraph $number 4</p>";
-    echo "<hr>";
-   
-    echo"<p>My favorite color is blue.</p>";
-    echo "<hr>";
-    echo $paragraph;
-    echo "<brr>";
-  echo strtolower($paragraph);
-  echo "<br>";
-  echo strtoupper($paragraph);
-  echo "<br>";
-  echo strlen("Hello World");
+<form action="project1.php" method= "post">
+APPLE:<input type="checkbox" name="fruits[]" value="apple"><br>
+Mango:<input type="checkbox" name="fruits[]" value="mango"><br>
+Passion:<input type="checkbox" name="fruits[]" value="passion"><br>
+Orange:<input type="checkbox" name="fruits[]" value="orange"><br>
+<input type=submit value="Submit">
 
-    ?>
+
+</form>
+<br/>
+<?php
+$friends= array('God', 'Jesus'); 
+ echo "My Friends: $friends[0]";    
+ $friends[6] = "James";
+echo count( $friends);  
+
+$fruitsArray= $_POST["fruits"];   
+echo $fruitsArray[0];   
+?>
+
 </body>
 </html>
