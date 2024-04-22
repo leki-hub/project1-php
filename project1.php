@@ -7,7 +7,7 @@
 </head>
 <body>
 <form action="project1.php" method= "post">
-Student:<input type="textbox" value="manu"><br>
+Student:<input type="textbox" name="student" ><br>
 
 <input type=submit value="Submit">
 
@@ -16,8 +16,8 @@ Student:<input type="textbox" value="manu"><br>
 <br/>
 <?php
 // Asscocative arrays, are like map object, since they have key value pairs.
-$apples = array("JJ"=>"A+","Kim"=>"B-", "Jim"=>"C+");  // Key is the fruit and Value is variety of apple
-echo $apples["JJ"]."<br>";   // Accessing using key
+$grades = array("JJ"=>"A+","Kim"=>"B-", "Jim"=>"C+");  // Key is the fruit and Value is variety of apple
+echo $grades[$_POST["student"]];"<br>";   // Accessing using key
 ?>
 
 </body>
