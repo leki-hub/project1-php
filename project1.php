@@ -18,17 +18,17 @@ Student:<input type="textbox" name="student" ><br>
 //functions in php
 
 function sayHi( $name, $age=6 ) {
- echo  "Hello," .$name. "!" ,"You are $age"; 
+ echo  "Hello, .$name. ! ,You are $age <br>"; 
 
 }
 sayHi("John");
-echo "<br>";
+
 sayHi("Jack",9);
-echo "<br>";
+
 sayHi("Grace",8);
-echo "<br>";
+;
 sayHi("Drake",7);
-echo "<br>";
+
 ?>
 
 </body>
