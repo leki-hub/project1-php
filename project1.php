@@ -17,12 +17,14 @@ Student:<input type="textbox" name="student" ><br>
 <?php
 $index= 1;
 
-
-
-while($index<=5) {
+do{
     echo "$index <br>";
     $index++;
- }
+}
+
+while($index<=6) 
+  
+
 
 ?>
 </body>
