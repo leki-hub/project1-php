@@ -15,21 +15,15 @@ Student:<input type="textbox" name="student" ><br>
 </form> -->
 <br/>
 <?php
-//functions in php
+$index= 1;
 
-function sayHi( $name, $age=6 ) {
- echo  "Hello, .$name. ! ,You are $age <br>"; 
 
-}
-sayHi("John");
 
-sayHi("Jack",9);
-
-sayHi("Grace",8);
-;
-sayHi("Drake",7);
+while($index<=5) {
+    echo "$index <br>";
+    $index++;
+ }
 
 ?>
-
 </body>
 </html>
